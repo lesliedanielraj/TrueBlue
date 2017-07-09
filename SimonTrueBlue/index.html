@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="./css/style.css" type="text/css" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="./js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="./js/simon.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="back">
+			<div class="lens shape1" data-pad="1">
+				<audio preload="auto" class="sound1">
+					<source src="sounds/mp3/button-31.mp3" type="audio/mpeg" />
+				</audio>
+				<audio preload="auto" class="error1">
+					<source src="sounds/mp3/error.mp3" type="audio/mpeg" />
+				</audio>
+			</div>
+			<div class="lens shape2" data-pad="2">
+				<audio preload="auto" class="sound2">
+					<source src="sounds/mp3/button-32.mp3" type="audio/mpeg" />
+				</audio>
+				<audio preload="auto" class="error2">
+					<source src="sounds/mp3/error.mp3" type="audio/mpeg" />
+				</audio>
+			</div>
+			<div class="lens shape3" data-pad="3">
+				<audio preload="auto" class="sound3">
+					<source src="sounds/mp3/button-33.mp3" type="audio/mpeg" />
+				</audio>
+				<audio preload="auto" class="error3">
+					<source src="sounds/mp3/error.mp3" type="audio/mpeg" />
+				</audio>
+			</div>
+			<div class="lens shape4" data-pad="4">
+				<audio preload="auto" class="sound4">
+					<source src="sounds/mp3/button-34.mp3" type="audio/mpeg" />
+				</audio>
+				<audio preload="auto" class="error4">
+					<source src="sounds/mp3/error.mp3" type="audio/mpeg" />
+				</audio>
+			</div>
+			<div class="circle">
+				<!--<div class="simon-logo">
+					<img src="./images/simon-logo.png" alt="Simon">
+				</div>-->
+				<div class="slider-div">
+					<div id="range-slider-level" class="range-slider">
+						<span id="levelSliderValue" class="range-slider__value">Level 1</span>
+						<input id="levelSlider" class="range-slider__range" type="range" value="1" min="1" max="3" step="1" disabled>
+					</div>
+					<div id="range-slider-skill" class="range-slider">
+						<span id="skillSliderValue" class="range-slider__value">Skill 1</span>
+						<input id="skillSlider" class="range-slider__range" type="range" value="1" min="1" max="4" step="1" disabled>
+					</div>
+				</div>
+				<div class="round">
+					<span><button class="roundButtons" type="button" id="round-btn-last" name="last-this-game" disabled="true">Last</button></span>
+					<span><button class="roundButtons" type="button" id="round-btn-start" name="start-new-game" disabled="true">Start</button></span>
+					<span><button class="roundButtons" type="button" id="round-btn-long" name="last-all-game" disabled="true">Long</button></span>
+				</div>
+				<div class="on_off_div">
+					<div class="onoffswitch">
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+						<label class="onoffswitch-label" for="myonoffswitch">
+							<span class="onoffswitch-inner"></span>
+							<span class="onoffswitch-switch"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" id="myName" name="Leslie" value="Raj">
+</body>
+
+</html>

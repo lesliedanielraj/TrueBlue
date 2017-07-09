@@ -1,0 +1,302 @@
+/*Start - Range Slider*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 60px 20px;
+}
+@media (min-width: 600px) {
+  body {
+    padding: 60px;
+  }
+}
+
+.range-slider {
+  margin: 10px 0 0 0%;
+}
+
+.range-slider {
+  width: 100%;
+}
+
+.range-slider__range {
+  -webkit-appearance: none;
+  /*width: calc(100% - (73px));*/
+  height: 10px;
+  border-radius: 10px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.range-slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  -webkit-transition: background .15s ease-in-out;
+  transition: background .15s ease-in-out;
+}
+.range-slider__range::-webkit-slider-thumb:hover {
+  background: #34A7C1;
+}
+.range-slider__range:active::-webkit-slider-thumb {
+  background: #34A7C1;
+}
+.range-slider__range::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  -webkit-transition: background .15s ease-in-out;
+  transition: background .15s ease-in-out;
+}
+.range-slider__range::-moz-range-thumb:hover {
+  background: #34A7C1;
+}
+.range-slider__range:active::-moz-range-thumb {
+  background: #34A7C1;
+}
+
+.range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #2c3e50;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+/*.range-slider__value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #2c3e50;
+  border-bottom: 7px solid transparent;
+  content: '';
+}*/
+
+::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}
+
+/*End - Range Slider*/
+
+/*Start - On Off Switch*/
+.on_off_div {
+    margin-left: 130px;
+    margin-top: 10px;
+}
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+/*End - On Off Switch*/
+
+.simon-logo {
+    margin-top: 32px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 75px;
+    max-width: 270px;
+}
+.simon-logo img{
+  width:200px;
+  height:80px;
+}
+
+.slider-div{
+  width: 500px;
+  margin-top: 80px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 60px;
+    max-width: 270px;
+}
+
+.round {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 35px;
+    max-width: 270px;
+}
+
+.round label{
+  float: none;
+  padding-top: 0px;
+    padding-right: inherit;
+    padding-bottom: 0px;
+    padding-left: 2.5em;
+  text-align: center;
+}
+
+.round span {
+    height: 100px !important;  
+    line-height: 70px;
+    padding-left: 30px;
+    vertical-align: top !important;
+}
+.round button {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    background: #34A7C1;
+}
+
+body {
+  background-color: lightslategrey;
+  color: whitesmoke;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  padding: 3px;
+}
+
+.wrapper {
+  position: relative;
+  width: 640px;
+  margin: 0 auto;
+}
+
+.back {
+  position: absolute;
+  top: 170px;
+  width: 640px;
+  height: 640px;
+  z-index: 0;
+  background-color: #000;
+  /*border-radius: 310px;*/
+}
+
+.lens {
+  width: 300px;
+  height: 300px;
+  float: left;
+  z-index: 1;
+  margin: 10px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+
+.shape1 {
+  border-top-left-radius: 300px;
+  background-color: lightseagreen;
+}
+
+.shape2 {
+  float: left;
+  border-top-right-radius: 300px;
+  background-color: lightcoral;
+  clear: right;
+}
+
+.shape3 {
+  float: left;
+  border-bottom-left-radius: 300px;
+  background-color: yellow;
+  clear: left;
+}
+
+.shape4 {
+  float: left;
+  border-bottom-right-radius: 300px;
+  background-color: lightgreen;
+}
+
+.circle {
+  position: absolute;
+    top: 145px;
+    left: 145px;
+    width: 350px;
+    height: 350px;
+    background: black;
+    border-radius: 300px;
+    z-index: 10;
+}
+
+.level, .score {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.sButton {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.start {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}

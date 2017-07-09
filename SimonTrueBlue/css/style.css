@@ -229,7 +229,7 @@ li {
 
 .back {
   position: absolute;
-  top: 170px;
+  top: 100px;
   width: 640px;
   height: 640px;
   z-index: 0;
